@@ -21,19 +21,19 @@
     <form method="POST" action="{% url 'procesar_formulario' %}" enctype="multipart/form-data">
       {% csrf_token %}
           <div class="form-group">
-            <label for="exampleInputEmail1">SSID</label>
-            <input type="email" class="form-control" id="inputssid" aria-describedby="emailHelp" name="ssid">
+            <label for="inputssid">SSID</label>
+            <input type="text" class="form-control" id="inputssid" name="inputssid">
           </div>
           <div class="form-group">
-            <label for="exampleInputPassword1">Security</label>
-            <input type="password" class="form-control" id="inputsecur" name="secur">
+            <label for="inputsecur">Security</label>
+            <input type="text" class="form-control" id="inputsecur" name="inputsecur">
           </div>
           <div class="form-group">
-              <label for="exampleInputPassword1">Password</label>
-              <input type="password" class="form-control" id="inputpass" name="password">
+              <label for="inputpass">Password</label>
+              <input type="password" class="form-control" id="inputpass" name="inputpass">
             </div>
           
-          <button type="submit" class="btn btn-primary">Crear</button>
+          <input type="submit" value="Crear">
         </form>    
   </div>
 
